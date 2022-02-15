@@ -1,9 +1,8 @@
-import Link from "next/link";
+import Headline from "../../components/headline";
 
 const HomePage = () => {
     return <section>
-        Hello World!
-        <Link href="/about">About</Link>
+        <Headline text={"Hello World!"} />
     </section>
 }
 

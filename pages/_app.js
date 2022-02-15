@@ -7,7 +7,7 @@ const AppComponent = ({ Component, pageProps }) => {
         <Layout>
             <Head>
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
-                <title>My ReactJS/NextJS/Firebase App</title>
+                <title>My ReactJS/NextJS App</title>
             </Head>
             <Component {...pageProps} />
         </Layout>
