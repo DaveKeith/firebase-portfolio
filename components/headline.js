@@ -1,5 +1,5 @@
-const Headline = ({ text }) => {
-    return <h1>{text}</h1>
+const Headline = (props) => {
+    return <h1>{props.text}</h1>
 }
 
 export default Headline;

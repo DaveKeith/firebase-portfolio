@@ -6,7 +6,8 @@ function MainNavigation() {
     <header>
       <Link href='/'>
           <a>
-              <Image />
+              Image to go here
+              {/* <Image /> */}
           </a>
       </Link>
       <nav>

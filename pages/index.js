@@ -1,4 +1,4 @@
-import Headline from "../../components/headline";
+import Headline from "../components/headline";
 
 const HomePage = () => {
     return <section>
