@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const HomePage = () => {
     return <section>
-        Hello World!
-        <Link href="/about">About</Link>
+        About
+        <Link href="/">Home</Link>
     </section>
 }
 
