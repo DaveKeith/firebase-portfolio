@@ -1,6 +1,9 @@
+import Headline from "../../components/headline";
+
 const ProjectList = () => {
     return <section>
-        Here's a list of many of my projects
+        <Headline text={"List of Projects"} />
+        <div>{"Here's a list of many of my projects"}</div>
     </section>
 }
 

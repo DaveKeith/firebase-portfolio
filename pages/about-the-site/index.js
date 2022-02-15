@@ -4,7 +4,7 @@ const AboutTheSite = () => {
     return <section>
         <Headline text={"About this Site"} />
         <div>
-            Here's a bit of detail about the tech and inner workings of this site in particular
+            {"Here's a bit of detail about the tech and inner workings of this site in particular"}
         </div>
         <div>
             <h3>ReactJS</h3>

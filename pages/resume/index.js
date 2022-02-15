@@ -1,5 +1,9 @@
+import Headline from "../../components/headline"
+
 const Resume = () => {
     return <section>
-        Resume
+        <Headline text={"My Resume"} />
     </section>
 }
+
+export default Resume;
