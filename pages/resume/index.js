@@ -1,9 +1,13 @@
+import { Fragment } from "react";
 import Headline from "../../components/headline"
 
 const Resume = () => {
-    return <section>
+    return <Fragment>
         <Headline text={"My Resume"} />
-    </section>
+        <section className="content">
+            Resume stuff
+        </section>
+    </Fragment>
 }
 
 export default Resume;

@@ -1,10 +1,13 @@
+import { Fragment } from "react";
 import Headline from "../../components/headline";
 
 const ProjectList = () => {
-    return <section>
+    return <Fragment>
         <Headline text={"List of Projects"} />
-        <div>{"Here's a list of many of my projects"}</div>
-    </section>
+        <section className="content">
+            {"Here's a list of many of my projects"}
+        </section>
+    </Fragment>
 }
 
 export default ProjectList;

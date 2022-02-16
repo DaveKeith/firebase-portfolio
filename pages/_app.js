@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import 'bootstrap/dist/css/bootstrap.css';
 import Layout from '../components/layout';
-import Headline from '../components/headline';
+import '../styles/globals.scss';
 
 const AppComponent = ({ Component, pageProps }) => {
     return (

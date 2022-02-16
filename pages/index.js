@@ -1,9 +1,11 @@
+import { Fragment } from "react";
 import Headline from "../components/headline";
 
 const HomePage = () => {
-    return <section>
-        <Headline text={"Hello World!"} />
-    </section>
+    return <Fragment>
+        <Headline text={"Home Page"} />
+        <section className="content">Hello World!</section>
+    </Fragment>
 }
 
 export default HomePage;

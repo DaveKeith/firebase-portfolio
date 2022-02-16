@@ -1,10 +1,11 @@
+import { Fragment } from "react";
 import Headline from "../../components/headline";
 
 const AboutMe = () => {
-    return <section>
+    return <Fragment>
         <Headline text={"About Me"} />
-        <div>{"I've definitely taken a unique path."}</div>
-    </section>
+        <section className="content">{"I've definitely taken a unique path."}</section>
+    </Fragment>
 }
 
 export default AboutMe;
