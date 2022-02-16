@@ -1,0 +1,191 @@
+{
+  "projects": [
+    {
+      "projectId": 1,
+      "workplace": "Diversey",
+      "projectName": "Product Selector",
+      "description": "Utilizes a database of approximately 500 products, allowing a user to filter the list and find the right product for their needs, get a description, and links to the product page.",
+      "project": [
+        {
+          "name": "Home",
+          "url": "http://www.diverseydigital.com/natools/productselector/",
+          "img": "../imgs/product-selector/home.png"
+        },
+        {
+          "name": "Decision 1",
+          "url": "http://www.diverseydigital.com/natools/productselector/?decision1=Personal%20Care",
+          "img": "../imgs/product-selector/decision1.png"
+        },
+        {
+          "name": "Decision 2",
+          "url": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers",
+          "img": "../imgs/product-selector/decision2.png"
+        },
+        {
+          "name": "Decision 2 with Tags",
+          "url": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers",
+          "img": "../imgs/product-selector/decisions-with-tags.png"
+        },
+        {
+          "name": "Product Page",
+          "url": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers&dbid=21",
+          "img": "../imgs/product-selector/product.png"
+        }
+      ]
+    },
+    {
+      "projectId": 2,
+      "workplace": "Diversey",
+      "projectName": "Dilution Calculator",
+      "description": "Allows a user to filter down to a specific product, name their price, and then generate results indicating how much they are paying for different volumes of water mixed with the diluted chemical.",
+      "project": [
+        {
+          "name": "Home",
+          "url": "http://www.diverseydigital.com/natools/dilutioncalculator",
+          "img": "../imgs/dilution-calculator/home.png"
+        },
+        {
+          "name": "Four Params",
+          "url": "http://www.diverseydigital.com/natools/dilutioncalculator/?brand=Accumix&category=Floor%20Maintainers%20and%20Strippers&product=REVIVE%20PLUS%20SC%20Cleaner%20Restorer&dilution_ratio=1:128",
+          "img": "../imgs/dilution-calculator/four-params.png"
+        },
+        {
+          "name": "Ready to Submit",
+          "url": "http://www.diverseydigital.com/natools/dilutioncalculator/?brand=Accumix&category=Floor%20Maintainers%20and%20Strippers&product=REVIVE%20PLUS%20SC%20Cleaner%20Restorer&dilution_ratio=1:128",
+          "img": "../imgs/dilution-calculator/ready-to-submit.png"
+        },
+        {
+          "name": "One Result",
+          "url": "http://www.diverseydigital.com/natools/dilutioncalculator/?result1=REVIVE%20PLUS%20SC%20Cleaner%20Restorer+dilution1+100#result",
+          "img": "../imgs/dilution-calculator/one-result.png"
+        },
+        {
+          "name": "Three Results",
+          "url": "http://www.diverseydigital.com/natools/dilutioncalculator/?result1=REVIVE%20PLUS%20SC%20Cleaner%20Restorer+dilution1+100&result2=CREW%20NA%20SC%20Non-Acid%20Disinfectant%20Cleaner+dilution1+100&result3=Suma%20Supreme%20Pot%20%26%20Pan%20Detergent+dilution1+100#result",
+          "img": "../imgs/dilution-calculator/three-results.png"
+        }
+      ]
+    },
+    {
+      "projectId": 3,
+      "workplace": "Diversey",
+      "projectName": "Floor Care Solutions",
+      "description": "Displays real world examples of floor problems, allowing a user to select the problem of their chosing, and see a description of the solution, usually consisting of a cooresponding Diversey product to help with that solution.",
+      "project": [
+        {
+          "name": "Home/Troubleshooting",
+          "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/",
+          "img": "../imgs/floor-care-solutions/home.png"
+        },
+        {
+          "name": "Troubleshooting Info Page",
+          "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/troubleshooting.php?problem=Black%20Heel%20Mark",
+          "img": "../imgs/floor-care-solutions/troubleshooting-info.png"
+        },
+        {
+          "name": "Substrates",
+          "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/substrates.php",
+          "img": "../imgs/floor-care-solutions/substrates.png"
+        },
+        {
+          "name": "Substrates Info Page",
+          "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/substrates.php?problem=Marble",
+          "img": "../imgs/floor-care-solutions/substrates-info.png"
+        },
+        {
+          "name": "PDF",
+          "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/padselection.php",
+          "img": "../imgs/floor-care-solutions/pdf.png"
+        },
+        {
+          "name": "Floor Care Calculator",
+          "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php",
+          "img": "../imgs/floor-care-solutions/calc.png"
+        },
+        {
+          "name": "Floor Finish Data Specifications",
+          "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php?sqft=1000&cat=Floor%20Finish&coats=10",
+          "img": "../imgs/floor-care-solutions/calc-results.png"
+        }
+      ]
+    },
+    {
+      "projectId": 4,
+      "projectName": "Inside the Park",
+      "githubUrl": "https://github.com/insidethepark/RB",
+      "deploymentUrl": "http://tiy-2016q1-danielrevo-inside-the-park.surge.sh/",
+      "description": "A Ruby on Rails application that allows a user to create an itinerary and fill it with events (baseball games) extracted from an API. The user could choose a day and an event from that day, which would allow the application to show the next day’s events, continuing until the user stops adding events. The user will then be able to view their itinerary with all the details related to the events scheduled for each day.",
+      "project": [
+        {
+          "name": "Login",
+          "img": "../imgs/inside-the-park/login.jpg"
+        },
+        {
+          "name": "Pick a date to begin",
+          "img": "../imgs/inside-the-park/initial_calendar.jpg"
+        },
+        {
+          "name": "Pick a game for the first day",
+          "img": "../imgs/inside-the-park/choose_first_game.jpg"
+        },
+        {
+          "name": "Pick a game for the next day",
+          "img": "../imgs/inside-the-park/choose_second_game.jpg"
+        },
+        {
+          "name": "Pick more games",
+          "img": "../imgs/inside-the-park/choose_third_game.jpg"
+        },
+        {
+          "name": "Final Itinerary",
+          "img": "../imgs/inside-the-park/final_itinerary.jpg"
+        }
+      ]
+    },
+    {
+      "projectId": 5,
+      "projectName": "The Spoon",
+      "githubUrl": "https://github.com/DaveKeith/recipe-list",
+      "deploymentUrl": "https://enigmatic-everglades-88944.herokuapp.com",
+      "description": "A Java Spring-Boot application that allows users to share recipes. It allows users to create recipes, taking into account the ingredients and steps needed to create the recipe. Additionally, the user can browse a list of recipes select one, and read, update, or delete.",
+      "project": [
+        {
+          "name": "Home",
+          "img": "../imgs/the-spoon/home.png"
+        },
+        {
+          "name": "Create Recipe",
+          "img": "../imgs/the-spoon/create-recipe.png"
+        },
+        {
+          "name": "Recipe List",
+          "img": "../imgs/the-spoon/recipe-list.png"
+        },
+        {
+          "name": "View Recipe",
+          "img": "../imgs/the-spoon/view-recipe.png"
+        }
+      ]
+    },
+    {
+      "projectId": 6,
+      "projectName": "Workout App",
+      "githubUrl": "https://github.com/workoutApp",
+      "description": "A MEAN stack (MongoDB, ExpressJS, AngularIO, NodeJS) application that allows a user to create a workout schedule, and then read, update, or delete workouts. A workout is scheduled for a particular day and includes a set of exercises.",
+      "project": [
+        {
+          "name": "Home",
+          "img": "../imgs/workout-app/home.png"
+        },
+        {
+          "name": "Create Workout",
+          "img": "../imgs/workout-app/create-workout.png"
+        },
+        {
+          "name": "Workout List",
+          "img": "../imgs/workout-app/workout-list.png"
+        }
+      ]
+    }
+  ]
+}
