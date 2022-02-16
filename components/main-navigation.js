@@ -1,17 +1,20 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+import classes from './main-navigation.module.css';
+
 function MainNavigation() {
   return (
-    <header>
-      <Link href='/'>
-          <a>
-              Image to go here
-              {/* <Image /> */}
-          </a>
-      </Link>
-      <nav>
-        <ul>
+    <header className={classes.header}>
+      <ul>
+          <li>
+            <Link href='/'>
+                <a>
+                    Image to go here
+                    {/* <Image /> */}
+                </a>
+            </Link>
+          </li>
           <li>
             <Link href='/'>Home</Link>
           </li>
@@ -27,8 +30,7 @@ function MainNavigation() {
           <li>
             <Link href='/resume'>Resume</Link>
           </li>
-        </ul>
-      </nav>
+      </ul>
     </header>
   );
 }
