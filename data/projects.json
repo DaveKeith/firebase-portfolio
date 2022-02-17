@@ -9,27 +9,27 @@
         {
           "name": "Home",
           "url": "http://www.diverseydigital.com/natools/productselector/",
-          "img": "../imgs/product-selector/home.png"
+          "img": "/imgs/product-selector/home.png"
         },
         {
           "name": "Decision 1",
           "url": "http://www.diverseydigital.com/natools/productselector/?decision1=Personal%20Care",
-          "img": "../imgs/product-selector/decision1.png"
+          "img": "/imgs/product-selector/decision1.png"
         },
         {
           "name": "Decision 2",
           "url": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers",
-          "img": "../imgs/product-selector/decision2.png"
+          "img": "/imgs/product-selector/decision2.png"
         },
         {
           "name": "Decision 2 with Tags",
           "url": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers",
-          "img": "../imgs/product-selector/decisions-with-tags.png"
+          "img": "/imgs/product-selector/decisions-with-tags.png"
         },
         {
           "name": "Product Page",
           "url": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers&dbid=21",
-          "img": "../imgs/product-selector/product.png"
+          "img": "/imgs/product-selector/product.png"
         }
       ]
     },
@@ -42,27 +42,27 @@
         {
           "name": "Home",
           "url": "http://www.diverseydigital.com/natools/dilutioncalculator",
-          "img": "../imgs/dilution-calculator/home.png"
+          "img": "/imgs/dilution-calculator/home.png"
         },
         {
           "name": "Four Params",
           "url": "http://www.diverseydigital.com/natools/dilutioncalculator/?brand=Accumix&category=Floor%20Maintainers%20and%20Strippers&product=REVIVE%20PLUS%20SC%20Cleaner%20Restorer&dilution_ratio=1:128",
-          "img": "../imgs/dilution-calculator/four-params.png"
+          "img": "/imgs/dilution-calculator/four-params.png"
         },
         {
           "name": "Ready to Submit",
           "url": "http://www.diverseydigital.com/natools/dilutioncalculator/?brand=Accumix&category=Floor%20Maintainers%20and%20Strippers&product=REVIVE%20PLUS%20SC%20Cleaner%20Restorer&dilution_ratio=1:128",
-          "img": "../imgs/dilution-calculator/ready-to-submit.png"
+          "img": "/imgs/dilution-calculator/ready-to-submit.png"
         },
         {
           "name": "One Result",
           "url": "http://www.diverseydigital.com/natools/dilutioncalculator/?result1=REVIVE%20PLUS%20SC%20Cleaner%20Restorer+dilution1+100#result",
-          "img": "../imgs/dilution-calculator/one-result.png"
+          "img": "/imgs/dilution-calculator/one-result.png"
         },
         {
           "name": "Three Results",
           "url": "http://www.diverseydigital.com/natools/dilutioncalculator/?result1=REVIVE%20PLUS%20SC%20Cleaner%20Restorer+dilution1+100&result2=CREW%20NA%20SC%20Non-Acid%20Disinfectant%20Cleaner+dilution1+100&result3=Suma%20Supreme%20Pot%20%26%20Pan%20Detergent+dilution1+100#result",
-          "img": "../imgs/dilution-calculator/three-results.png"
+          "img": "/imgs/dilution-calculator/three-results.png"
         }
       ]
     },
@@ -75,37 +75,37 @@
         {
           "name": "Home/Troubleshooting",
           "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/",
-          "img": "../imgs/floor-care-solutions/home.png"
+          "img": "/imgs/floor-care-solutions/home.png"
         },
         {
           "name": "Troubleshooting Info Page",
           "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/troubleshooting.php?problem=Black%20Heel%20Mark",
-          "img": "../imgs/floor-care-solutions/troubleshooting-info.png"
+          "img": "/imgs/floor-care-solutions/troubleshooting-info.png"
         },
         {
           "name": "Substrates",
           "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/substrates.php",
-          "img": "../imgs/floor-care-solutions/substrates.png"
+          "img": "/imgs/floor-care-solutions/substrates.png"
         },
         {
           "name": "Substrates Info Page",
           "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/substrates.php?problem=Marble",
-          "img": "../imgs/floor-care-solutions/substrates-info.png"
+          "img": "/imgs/floor-care-solutions/substrates-info.png"
         },
         {
           "name": "PDF",
           "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/padselection.php",
-          "img": "../imgs/floor-care-solutions/pdf.png"
+          "img": "/imgs/floor-care-solutions/pdf.png"
         },
         {
           "name": "Floor Care Calculator",
           "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php",
-          "img": "../imgs/floor-care-solutions/calc.png"
+          "img": "/imgs/floor-care-solutions/calc.png"
         },
         {
           "name": "Floor Finish Data Specifications",
           "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php?sqft=1000&cat=Floor%20Finish&coats=10",
-          "img": "../imgs/floor-care-solutions/calc-results.png"
+          "img": "/imgs/floor-care-solutions/calc-results.png"
         }
       ]
     },
@@ -118,27 +118,27 @@
       "project": [
         {
           "name": "Login",
-          "img": "../imgs/inside-the-park/login.jpg"
+          "img": "/imgs/inside-the-park/login.jpg"
         },
         {
           "name": "Pick a date to begin",
-          "img": "../imgs/inside-the-park/initial_calendar.jpg"
+          "img": "/imgs/inside-the-park/initial_calendar.jpg"
         },
         {
           "name": "Pick a game for the first day",
-          "img": "../imgs/inside-the-park/choose_first_game.jpg"
+          "img": "/imgs/inside-the-park/choose_first_game.jpg"
         },
         {
           "name": "Pick a game for the next day",
-          "img": "../imgs/inside-the-park/choose_second_game.jpg"
+          "img": "/imgs/inside-the-park/choose_second_game.jpg"
         },
         {
           "name": "Pick more games",
-          "img": "../imgs/inside-the-park/choose_third_game.jpg"
+          "img": "/imgs/inside-the-park/choose_third_game.jpg"
         },
         {
           "name": "Final Itinerary",
-          "img": "../imgs/inside-the-park/final_itinerary.jpg"
+          "img": "/imgs/inside-the-park/final_itinerary.jpg"
         }
       ]
     },
@@ -151,19 +151,19 @@
       "project": [
         {
           "name": "Home",
-          "img": "../imgs/the-spoon/home.png"
+          "img": "/imgs/the-spoon/home.png"
         },
         {
           "name": "Create Recipe",
-          "img": "../imgs/the-spoon/create-recipe.png"
+          "img": "/imgs/the-spoon/create-recipe.png"
         },
         {
           "name": "Recipe List",
-          "img": "../imgs/the-spoon/recipe-list.png"
+          "img": "/imgs/the-spoon/recipe-list.png"
         },
         {
           "name": "View Recipe",
-          "img": "../imgs/the-spoon/view-recipe.png"
+          "img": "/imgs/the-spoon/view-recipe.png"
         }
       ]
     },
@@ -175,15 +175,15 @@
       "project": [
         {
           "name": "Home",
-          "img": "../imgs/workout-app/home.png"
+          "img": "/imgs/workout-app/home.png"
         },
         {
           "name": "Create Workout",
-          "img": "../imgs/workout-app/create-workout.png"
+          "img": "/imgs/workout-app/create-workout.png"
         },
         {
           "name": "Workout List",
-          "img": "../imgs/workout-app/workout-list.png"
+          "img": "/imgs/workout-app/workout-list.png"
         }
       ]
     }

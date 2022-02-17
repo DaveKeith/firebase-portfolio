@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import Headline from "../../components/header/headline";
+import Headline from "../components/header/headline";
 
 const HomePage = () => {
     return <Fragment>

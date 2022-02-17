@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import classes from './main-navigation.module.css';
+import classes from './main-navigation.module.scss';
 
 function MainNavigation() {
   return (
