@@ -7,13 +7,20 @@
 
     ul{
         position: fixed;
-        padding: 20rem;
+        padding: 20rem 10rem;
         display: block;
         height: 100vh;
         width: 100vw;
         text-align: center;
         z-index: 999;
         background-color: midnightblue;
+
+        :hover{
+            transform: scale(0.85);
+            transition: transform 0.5s;
+            color: white;
+            list-style: none;
+        }
     }
 }
 
