@@ -8,6 +8,7 @@ const AppComponent = ({ Component, pageProps }) => {
         <Layout>
             <Head>
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
                 <title>My ReactJS/NextJS App</title>
             </Head>
             <Component {...pageProps} />
