@@ -12,19 +12,19 @@ const ProjectListItem = ({ project }) => {
 
 
     return (
-        <li>
+        <div className={classes.item}>
             <Link 
                 href={"/projects/[projectId]"} 
                 as={`/projects/${projectId}`} 
                 passHref
             >
                 <div>
-                    <h4>{projectName}</h4>
+                    <h3>{projectName}</h3>
                     <p>{description}</p>
                     <Image src={img.img} alt={img.name} width={500} height={300} />
                 </div>
             </Link>
-        </li>
+        </div>
     )
 }
 

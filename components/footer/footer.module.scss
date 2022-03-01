@@ -1,0 +1,22 @@
+.footerClass{
+    background-color: midnightblue;
+    padding: 1rem 3rem 3rem 3rem;
+    margin-top: 10rem;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+
+        i{
+            font-size: 4rem;
+            color: white;
+            cursor: pointer;
+            margin-right: 5rem;
+        }
+    
+        :hover{
+            transform: scale(0.85);
+            transition: transform 0.5s linear;
+        }
+    }
+}

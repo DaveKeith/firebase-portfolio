@@ -9,11 +9,11 @@ const ProjectList = () => {
         <Headline text={"List of Projects"} />
         <section className="content">
             <p className="fs-3 mb-5">{"Here's a list of many of my projects:"}</p>
-            <ul>
+            <div className="projects-grid">
                 {projects.map(project => (
                     <ProjectListItem project={project} key={project.id} />
                 ))}
-            </ul>
+            </div>
         </section>
     </Fragment>
 }

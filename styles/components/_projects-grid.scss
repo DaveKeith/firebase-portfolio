@@ -1,0 +1,11 @@
+.projects-grid{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 3rem;
+
+    @include respond(phone) { // width < 600?
+        grid-template-columns: 1fr;
+    }
+}

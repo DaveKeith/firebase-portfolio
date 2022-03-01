@@ -1,0 +1,13 @@
+.item{
+    border: 0.1rem solid midnightblue;
+    padding: 2rem;
+    transition: box-shadow 0.5s linear, transform 0.5s linear;
+
+    &:hover{
+        cursor: pointer;
+        background-color: lightcyan;
+        box-shadow: 0 0 1rem 1rem darkslateblue;
+        transform: scale(0.95);
+        transition: box-shadow 0.5s linear, transform 0.5s linear, background-color 0.5s linear;
+    }
+}
