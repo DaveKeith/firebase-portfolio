@@ -1,0 +1,88 @@
+.hide, .show{
+    position: fixed;
+    width: 20rem;
+    top: 20rem; 
+    color: white;
+}
+
+.hide{
+    left: -17rem;
+    transition: left 0.5s linear;
+
+    i::before{
+        transform: rotate(0);
+        transition: transform 0.5s linear;
+    }
+}
+.show{
+    left: 0rem;
+    transition: left 0.5s linear;
+
+    i::before{
+        transform: rotate(180deg);
+        transition: transform 0.5s linear;
+    }
+}
+
+.toggle{
+    float: right;
+    margin-top: 3rem;
+    height: 7rem;
+    width: 4rem;
+    background-color: midnightblue; 
+    border-radius: 0 1rem 1rem 0;
+    cursor: pointer;
+
+    i::before{
+        position: relative;
+        margin-left: 0.5rem;
+        top: 2rem;
+        font-size: 3rem;
+    }
+}
+
+.toggle:hover{
+    background-color: darkslateblue;
+}
+
+.index{
+    float: left;
+    width: 16rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 0.2rem 0.2rem black; 
+
+    h4{
+        background-color: midnightblue; 
+        padding: 1rem;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    ul{
+        padding: 0;
+        margin: 0;
+        background-color: rgb(midnightblue, 0.7);
+    }
+
+    li{
+        list-style: none;
+        text-indent: none;
+        border-bottom: 1px solid white;
+
+        &:hover{
+            background-color: darkslateblue;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        height: 100%;
+        width: 100%;
+        padding: 0.5rem;
+    }
+}
+
+//https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox#example

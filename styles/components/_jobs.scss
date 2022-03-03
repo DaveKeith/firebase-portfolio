@@ -1,0 +1,15 @@
+.job{
+    padding: 4rem 0;
+    border-bottom: 2px solid midnightblue;
+
+    h3{
+        display: inline;
+        line-height: 2;
+    }
+    span{
+        float: right;
+    }
+    li{
+        list-style: url(../../public/svgs/intersect.svg); //changed the size and color
+    }
+}

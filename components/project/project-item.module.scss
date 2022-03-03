@@ -5,7 +5,7 @@
 
     &:hover{
         cursor: pointer;
-        background-color: lightcyan;
+        background-color: rgb(245, 255, 255);
         box-shadow: 0 0 1rem 1rem darkslateblue;
         transform: scale(0.95);
         transition: box-shadow 0.5s linear, transform 0.5s linear, background-color 0.5s linear;

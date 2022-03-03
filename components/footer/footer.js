@@ -27,6 +27,9 @@ const Footer = () => {
                     </a>
                 </li>
                 <li>
+                    <i className="bi bi-envelope" />
+                </li>
+                <li>
                     <i className='bi bi-phone' />
                 </li>
             </ul>
