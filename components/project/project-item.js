@@ -4,7 +4,7 @@ import classes from "./project-item.module.scss";
 
 const ProjectListItem = ({ project }) => {
     let { projectId, projectName, description } = project;
-    const img = project.project[0];
+    const img = project.views[0];
     
     if(project.workplace){
         projectName = `${project.workplace} - ${projectName}`;

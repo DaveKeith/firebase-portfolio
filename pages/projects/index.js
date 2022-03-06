@@ -1,10 +1,21 @@
-import { Fragment } from "react";
+import { Fragment, useState, useEffect } from "react";
 
-import { projects } from '../../data/projects.json';
 import Headline from "../../components/header/headline";
 import ProjectListItem from "../../components/project/project-item";
 
 const ProjectList = () => {
+    const [projects, setProjects] = useState([]);
+
+    useEffect(() => {
+        fetch(
+            'https://davekeith-portfolio-86436-default-rtdb.firebaseio.com/projects.json', 
+            { method: "get", mode: "cors" }
+        )
+        .then(res => res.json())
+        .then(res => { setProjects(res) })
+        .catch(err => console.log(err));
+    }, []);
+
     return <Fragment>
         <Headline text={"List of Projects"} />
         <section className="content">

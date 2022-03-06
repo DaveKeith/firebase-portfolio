@@ -1,9 +1,14 @@
 import { Fragment } from "react";
 import { useRouter } from "next/router";
 import Headline from "../../components/header/headline";
-import { projects } from '../../data/projects.json';
+//import { projects } from '../../data/projects.json';
+//import getProjects from "../../utils/getData";
+import path from 'path';
+//import fs from 'fs/promises';
 
-const Project = () => {
+const Project = async () => {
+    const projects = await getProjects();
+
     const { query } = useRouter();
     const idNum = parseInt(query.projectId);
     const myProject = projects.find((item) => {
@@ -26,5 +31,12 @@ const Project = () => {
         </section>
     </Fragment>
 }
+
+const getProjects = async () => {
+    const jsonData = await fetch('../../data/projects.json', { method: "get", mode: "cors" })
+        .then(res => res.json())
+    const data = JSON.parse(jsonData);
+    return { projects };
+};
 
 export default Project;
