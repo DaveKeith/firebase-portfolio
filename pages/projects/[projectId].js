@@ -33,13 +33,4 @@ const Project = () => {
     </Fragment>
 }
 
-// const getStaticPaths = (context) => {
-//     return {
-//         paths: [
-//             { params: { projectId: context.params.projectId } }
-//         ],
-//         fallback: true
-//     }
-// }
-
 export default Project;
