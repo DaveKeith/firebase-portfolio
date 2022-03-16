@@ -14,16 +14,16 @@ function MainNavigation() {
     }
   }
 
-  useEffect(() => {
-    window.onresize = setRotate("deg-0");
-  }, []);
+  // useEffect(() => {
+  //   window.onresize = setRotate("deg-0");
+  // }, []);
 
   return (
     <Fragment>
       <header className={`${classes.mobileHeader} ${rotate}`}>
         <div className='icon-bg' />
         <i className="bi bi-plus-circle-fill" onClick={mobileNav} />
-        <ul>
+        <ul onClick={mobileNav}>
             <li>
               <Link href='/'>Home</Link>
             </li>

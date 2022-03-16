@@ -3,11 +3,11 @@
     width: 90rem;
     margin: auto;
 
-    @include respond(phone) { // width < 600?
+    @include respond(phone) { // width < 600
         max-width: 95%;
     }
 
-    @include respond(tab-land) { // width < 1200?
+    @include respond(tab-land) { // width < 1200
         max-width: 90%;
     }
 }
