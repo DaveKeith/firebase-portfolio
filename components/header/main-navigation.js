@@ -23,7 +23,7 @@ function MainNavigation() {
       <header className={`${classes.mobileHeader} ${rotate}`}>
         <div className='icon-bg' />
         <i className="bi bi-plus-circle-fill" onClick={mobileNav} />
-        <ul onClick={mobileNav}>
+        <ul>
             <li>
               <Link href='/'>Home</Link>
             </li>

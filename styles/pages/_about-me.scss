@@ -1,0 +1,20 @@
+.me{
+    &--img{
+        float: left;
+        margin-right: 2rem;
+        text-align: left;
+        transition: all 0.5s linear;
+
+        @include respond(tab-port){
+            float: none;
+            margin: 0;
+            text-align: center;
+            transition: all 0.5s linear;
+        }
+
+        &__pic1{
+            border-radius: 50% !important;
+            border: 2px solid midnightblue !important;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import Headline from "../../components/header/headline";
 import TableOfContents from "../../components/sidebars/tableOfContents";
+import { withRouter } from "next/router";
 
 const Resume = () => {
     const resumeList = [
@@ -191,38 +192,4 @@ const Resume = () => {
     </Fragment>
 }
 
-export default Resume;
-
-// PROGRAMMING SKILLS
-
-// Back-end Technologies
-// NodeJS, Java (Spring-Boot), Ruby on Rails, PHP
-// Front-end Technologies
-// JavaScript, ReactJS, NextJS, Angular 2+, jQuery, HTML, Handlebars, CSS/SASS, Bootstrap, Materialize, Foundation
-// Scripting
-// Groovy, Shell, Powershell
-// Database Languages
-// MSSQL, SQLite3, PostgreSQL, MongoDB, JSon, XML, YMAL
-// Programming Tools
-// Git, GitHub, BitBucket, NPM, Jenkins, Artifactory, Atom, Visual Studio Code, Postman, SOAPUI, Amazon Web Services, Heroku, X-Code, Spring-Tools-Suite, Eclipse, WebSphere Integration Developer (WID), DBVis
-
-
-// 
-// 
-// 
-// 
-// Created Reddit Clone with materialize styling
-// Github: 
-// Technologies used: Ruby on Rails, HTML, CSS, Materialize, SQLite3, PostgreSQL, JSon, Heroku, Postman, Amazon Web Services
-
-// US Navy 									    
-// 
-// 
-// 
-
-// Education
-// Attended UNC Charlotte, Charlotte, NC 					       
-// Studied Computer Science
-// Graduated from Belmont Abbey College, Belmont, NC 			                      May 2009
-// BA in Economics (Minor: History)
-// Attended North Carolina State University, Raleigh, NC 	                         August 2004- May 2006
+export default withRouter(Resume);

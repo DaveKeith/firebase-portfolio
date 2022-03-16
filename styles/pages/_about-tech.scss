@@ -1,0 +1,71 @@
+.about{
+    &--git{
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-columns: 16rem 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-gap: 1rem 3rem;
+        padding: 1rem 3rem;
+
+        i{
+            grid-row: span 2;
+            align-self: center;
+
+            &::before{
+                font-size: 15rem;
+            }
+        }
+        h3, div{
+            grid-column: 2;
+        }
+        h3{
+            align-self: end;
+        }
+    }
+
+    &--react{
+        display: grid;
+        grid-template-columns: 1fr 20rem;
+        grid-template-rows: 1fr 3fr;
+
+        span{
+            grid-column: 2;
+            grid-row: span 3;
+            transform: scale(1.5);
+        }
+        h3, div, ul{
+            grid-column: 1;
+        }
+        h3{
+            grid-row: 1;
+            align-self: end;
+        }
+        ul{
+            align-self: start;
+        }
+        img{
+            animation: fullRotate 10s linear infinite;
+        }
+    }
+
+    &--css{
+        background-color: whitesmoke;
+        padding: 1rem 3rem;
+    }
+
+    &--hosting{
+        display: grid;
+        grid-template-columns: 16rem 1fr;
+        grid-template-rows: calc(2rem + 0.6vw) 2fr;
+        grid-gap: 1rem 3rem;
+
+        span{
+            grid-row: span 3;
+            align-self: start;
+        }
+
+        h3, ul{
+            grid-column: 2;
+        }
+    }
+}

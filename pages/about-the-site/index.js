@@ -1,28 +1,34 @@
 import { Fragment } from "react";
 import Headline from "../../components/header/headline";
+import Image from "next/image";
+import { withRouter } from "next/router";
 
 const AboutTheSite = () => {
     return <Fragment>
         <Headline text={"About this Site"} />
         <section className="content">
-            <div>
+            <div className="about--intro mb-5">
                 {"Here's a bit of detail about the tech and inner workings of this site in particular"}
             </div>
-            <div>
-                <h3>Git</h3>
-                <div>I want to start by mentioning that the source code for this site is on GitHub: <a href="https://github.com/DaveKeith/vercel-portfolio" target="_blank" rel="noreferrer">https://github.com/DaveKeith/vercel-portfolio</a>.</div>
+            <div className="about--git mb-5">
+                <i className="bi bi-github" aria-label="GitHub Profile" />
+                <h3>GitHub</h3>
+                <div>I want to start by mentioning that in addition to all the other projects on my <a href="https://github.com/DaveKeith" target="_blank" rel="noreferrer">GitHub</a> account, the source code for this site is on GitHub as well: <a href="https://github.com/DaveKeith/vercel-portfolio" target="_blank" rel="noreferrer">https://github.com/DaveKeith/vercel-portfolio</a>.</div>
             </div>
-            <div>
+            <div className="about--react mb-5">
+                <Image src="/svgs/react-logo.svg" alt="react-logo" width={200} height={200} />
                 <h3>ReactJS</h3>
-                <div><a href="https://reactjs.org" target="_blank" rel="noreferrer">ReactJS</a> relies on JSX components to render HTML elements to create a single page application.  This can be very convienent when needing to reuse various elements and their functionalities.  Also simplifies dynamically creating elements.</div>
-                <ul>
-                    <li>
-                        <h4>NextJS</h4>
-                        <div>I see <a href="https://nextjs.org" target="_blank" rel="noreferrer">NextJS</a> as a library that takes React to the next level.  With the various libraries offered by NextJS, we can improve our routing features (particularly dynamic routing), we can more easily utilize images, and we can even add additional html elements such as head and script.</div>
-                    </li>
-                </ul>
+                <div>
+                    <div><a href="https://reactjs.org" target="_blank" rel="noreferrer">ReactJS</a> relies on JSX components to render HTML elements to create a single page application.  This can be very convienent when needing to reuse various elements and their functionalities.  Also simplifies dynamically creating elements.</div>
+                    <ul>
+                        <li>
+                            <h4>NextJS</h4>
+                            <div>I see <a href="https://nextjs.org" target="_blank" rel="noreferrer">NextJS</a> as a library that takes React to the next level.  With the various libraries offered by NextJS, we can improve our routing features (particularly dynamic routing), we can more easily utilize images, and we can even add additional html elements such as head and script.</div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div>
+            <div className="about--css mb-5">
                 <h3>CSS</h3>
                 <div>A portfolio page should have great styling.  Fortunately, I have the skills in CSS (Cascading Style Sheets) to make this site look good.  Here are several notalbe features:</div>
                 <ul>
@@ -36,8 +42,9 @@ const AboutTheSite = () => {
                     </li>
                 </ul>
             </div>
-            <div>
+            <div className="about--hosting">
                 <h3>Hosting</h3>
+                <Image src="/vercel.svg" alt="vercel-logo" width={200} height={200} />
                 <ul>
                     <li>
                         <h4>Vercel</h4>
@@ -59,4 +66,4 @@ const AboutTheSite = () => {
     </Fragment>
 }
 
-export default AboutTheSite;
+export default withRouter(AboutTheSite);

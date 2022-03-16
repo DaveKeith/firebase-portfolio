@@ -1,11 +1,14 @@
+import { useRouter } from "next/router";
 import { Fragment, useState, useEffect } from "react";
 import Headline from "../../components/header/headline";
 
 const Project = () => {
     const [myProject, setMyProject] = useState({});
+    const router = useRouter()
+    const projectId = router.query.projectId;
 
     useEffect(() => {
-        const projectId = window.location.href.split('/').pop();
+        //const projectId = window.location.href.split('/').pop();
         const jsonFileNum = parseInt(projectId) - 1;
         fetch(
             `https://davekeith-portfolio-86436-default-rtdb.firebaseio.com/projects/${jsonFileNum}.json`, 

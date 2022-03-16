@@ -1,0 +1,25 @@
+.job{
+    &:first-child{
+        border-top: 2px solid midnightblue;;
+    }
+
+    &:nth-child(even){
+        background-color: whitesmoke;
+        border: 2px solid midnightblue;
+    }
+
+    border-left: 2px solid midnightblue;
+    border-right: 2px solid midnightblue;
+    padding: 4rem 2rem;
+
+    h3{
+        display: inline;
+        line-height: 2;
+    }
+    span{
+        float: right;
+    }
+    li{
+        list-style: url(../../public/svgs/intersect.svg); //changed the size and color
+    }
+}
