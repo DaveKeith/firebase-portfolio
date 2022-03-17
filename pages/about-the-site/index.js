@@ -44,6 +44,7 @@ const AboutTheSite = () => {
             </div>
             <div className="about--hosting">
                 <h3>Hosting</h3>
+                <i className="bi bi-server" aria-label="Server" />
                 <Image src="/vercel.svg" alt="vercel-logo" width={200} height={200} />
                 <ul>
                     <li>
