@@ -8,6 +8,7 @@ const HomePage = () => {
         <section className="content">
             <p>Here we break down the site and {"it's"} features.</p>
         </section>
+        <div className='bg-face' />
     </Fragment>
 }
 
