@@ -22,7 +22,6 @@ const AboutMe = () => {
             <p>{"I'm a Navy Veteran.  Served out of Mayport, Florida (near Jacksonville) and served aboard a frigate called the USS Underwood (FFG36) and a cruiser called the USS Gettysburg (CG64)."}</p>
             <p>{"Even before that, I travelled quite a bit"}</p>
         </section>
-        <div className='bg-face' />
     </Fragment>
 }
 

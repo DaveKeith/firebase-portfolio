@@ -12,6 +12,7 @@ const AppComponent = ({ Component, pageProps }) => {
                 <title>David Keith Portfolio</title>
             </Head>
             <Component {...pageProps} />
+            <div className='bg-face' />
         </Layout>
     );
 };
