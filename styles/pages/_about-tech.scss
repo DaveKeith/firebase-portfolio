@@ -1,6 +1,6 @@
 .about{
     &--git{
-        background-color: rgba(lightgrey, 0.3);
+        background-color: $color-alt-item;
         display: grid;
         grid-template-columns: 10rem 1fr;
         grid-template-rows: calc(2rem + 0.6vw) 1fr;

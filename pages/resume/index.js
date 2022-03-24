@@ -5,6 +5,10 @@ import { withRouter } from "next/router";
 
 const Resume = () => {
     const resumeList = [
+        {
+            id: "charter",
+            job: "Charter Communications"
+        },
         { 
             id: "diversey-freelance", 
             job: "Diversey (Freelance)" 
@@ -59,6 +63,11 @@ const Resume = () => {
         <Headline text={"My Resume"} />
         <TableOfContents title="Resume Index" contentsList={resumeList} />
         <section className="content">
+            <div className="job" id="charter">
+                <h3>Charter Communications</h3>
+                <span>Mar 2022-Present</span>
+                <h4>Software Developer</h4>
+            </div>            
             <div className="job" id="diversey-freelance">
                 <h3>Diversey (Freelance)</h3>
                 <span>Aug 2020-Sept 2021</span>

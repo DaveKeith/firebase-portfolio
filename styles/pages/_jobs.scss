@@ -1,15 +1,15 @@
 .job{
     &:first-child{
-        border-top: 2px solid midnightblue;;
+        border-top: 2px solid $color-primary;;
     }
 
     &:nth-child(even){
-        background-color: rgba(lightgrey, 0.3);
-        border: 2px solid midnightblue;
+        background-color: $color-alt-item;
+        border: 2px solid $color-primary;
     }
 
-    border-left: 2px solid midnightblue;
-    border-right: 2px solid midnightblue;
+    border-left: 2px solid $color-primary;
+    border-right: 2px solid $color-primary;
     padding: 4rem 2rem;
 
     h3{

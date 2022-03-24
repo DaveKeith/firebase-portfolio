@@ -5,6 +5,10 @@
     grid-template-rows: 1fr;
     gap: 3rem;
 
+    p{
+        color: $color-text-light;
+    }
+
     @include respond(phone) { // width < 600?
         grid-template-columns: 1fr;
     }
