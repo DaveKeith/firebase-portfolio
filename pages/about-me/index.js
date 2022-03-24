@@ -7,20 +7,53 @@ const AboutMe = () => {
     return <Fragment>
         <Headline text={"About Me"} />
         <section className="content me">
-            <div className="me--img">
-                <Image 
-                    src="/imgs/davekeithpic.jpg" 
-                    alt="Dave Keith" 
-                    width={300} 
-                    height={300} 
-                    className="me--img__pic1"
-                />
+            <div className="me--details">
+                <div className="me--img me--img__pic1">
+                    <Image 
+                        src="/imgs/davekeithpic.jpg" 
+                        alt="Dave Keith" 
+                        width={200} 
+                        height={200} 
+                    />
+                </div>
+                <p>
+                    <span>{"Hi, I'm Dave Keith  "}</span> 
+                    {"  I go by David as well but I've noticed that David Keith taken as a profile name much more often. I'm a software developer with experience in a wide array of technologies, accustomed to working in a wide array of work environments. On top of that, I'm very ambitious and willing to learn new technologies."}</p>
             </div>
-            <p>{"Hi, I'm Dave Keith (I go by David as well but I've noticed that David Keith taken as a profile name much more often). I'm a software developer with experience in a wide array of technologies, accustomed to working in a wide array of work environments. On top of that, I'm very ambitious and willing to learn new technologies."}</p>
             <p>{"I've definitely taken a unique path."}</p>
-            <p>{"I'm from Charlotte, North Carolina"}</p>
-            <p>{"I'm a Navy Veteran.  Served out of Mayport, Florida (near Jacksonville) and served aboard a frigate called the USS Underwood (FFG36) and a cruiser called the USS Gettysburg (CG64)."}</p>
-            <p>{"Even before that, I travelled quite a bit"}</p>
+            <div className="me--details me--alt-bg">
+                <p>
+                    <span>{"I'm from Charlotte, North Carolina.  "}</span>  
+                    {"  Moved here when I was five years old, lived here most of my life, and currently live here.  In the past I've lived in Raleigh while attending college at NC State and later for MetLife, Mayport, Florida (near Jacksonville) when I was in the Navy, and Dover, New Hampshire for my role at Liberty Mutual."}
+                </p>
+                <div className="me--img me--img__pic2">
+                    <Image 
+                        src="/imgs/charlotte.jpg" 
+                        alt="Charlotte" 
+                        width={384} 
+                        height={240} 
+                    />
+                </div>
+            </div>
+            <div className="me--details me--rv-col">
+                <div className="me--img me--img__pic3">
+                    <Image 
+                        src="/imgs/cg64.jpg" 
+                        alt="USS Gettysburg" 
+                        width={338} 
+                        height={225} 
+                    />
+                </div>
+                <div>
+                    <p>
+                        <span>{"I'm a Navy Veteran.  "}</span>
+                        {"  I was stationed at Naval Station Mayport from 2010-2014 and served aboard a frigate called the USS Underwood (FFG36) and a cruiser called the USS Gettysburg (CG64)."}
+                    </p>
+                    <p>{"On the USS Underwood, we deployed to the Carribean and to the Pacific side of South America (via the Panama Canal).  We were able to visit numerous countries such as Panama, Colombia, Chile, Jamaica, Trinidad and Tobago, Curacao, and Honduras."}</p>
+                    <p>{"On the USS Gettysburg, we deployed to the Persian Gulf as part of a carrier group.  We stopped in Marseilles, France en route and while in the Persian Gulf, made several port visits to Bahrain and Dubai."}</p>
+                </div>
+            </div>
+            <p>{"Even before that, I travelled quite a bit."}</p>
         </section>
     </Fragment>
 }
