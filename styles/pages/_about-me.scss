@@ -13,6 +13,10 @@
     &--alt-bg{
         background-color: $color-alt-item;
         padding-left: 2rem;
+
+        @include respond(tab-port){
+            padding: 2rem;
+        }
     }
 
     &--rv-col{
@@ -51,6 +55,15 @@
 
         &__pic2{
             width: 100rem;
+            padding-right: 5px;
+
+            img{
+                margin-top: 5px !important;
+            }
+
+            @include respond(tab-port){
+                padding-right: 0;
+            }
         }
         
         &__pic3{
