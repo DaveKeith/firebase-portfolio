@@ -6,7 +6,7 @@
     margin-left: -10rem;
     transition: margin 1s;
 
-    @media only screen and (tab-port) { 
+    @include respond(tab-port) { 
         margin-top: 11rem;
         margin-left: 0rem;
     };
@@ -56,7 +56,7 @@
     padding: 2rem 0px;
     transition: margin-top 1s;
 
-    @media only screen and (tab-port) { 
+    @include respond(tab-port) { 
         margin-top: -10rem;
     };
 
@@ -81,11 +81,11 @@
             &:hover{
                 transform: scale(0.85);
                 transition: transform 0.5s;
-
-                .underline{
-                    border-top: 1rem solid white;
-                }
             }
+        }
+
+        li.active-nav{
+            color: cyan;
         }
     }
 }

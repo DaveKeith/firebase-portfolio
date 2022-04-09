@@ -6,7 +6,7 @@
     margin: 3rem;
     font-weight: 300;
 
-    @media only screen and (tab-port) { 
+    @include respond(tab-port) { 
         margin: 5rem;
     };
 }
