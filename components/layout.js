@@ -5,7 +5,7 @@ import MainNavigation from './header/main-navigation';
 function Layout(props) {
   return (
     <Fragment>
-      <MainNavigation />
+      <MainNavigation compString={props.children[1].type.displayName}/>
       <main>{props.children}</main>
       <Footer />
     </Fragment>

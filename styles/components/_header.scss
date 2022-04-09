@@ -55,3 +55,16 @@
         transition: all .5s linear;
     }
 }
+
+.active-indicator{
+    width: 5rem;
+    height: 2rem;
+    margin: auto;
+}
+
+.active-nav .active-indicator{
+    border-left: 2.5rem solid transparent;
+    border-right: 2.5rem solid transparent;
+    border-bottom: 2rem solid white;
+    transform: scale(1.5) translateY(0.5rem);
+}

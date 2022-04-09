@@ -1,9 +1,10 @@
 import { Fragment, useState, useEffect } from 'react';
 import Link from 'next/link';
+import HeaderNavLink from './header-nav-link';
 
 import classes from '../../styles/modules/main-navigation.module.scss';
 
-function MainNavigation() {
+function MainNavigation({compString}) {
   const [rotate, setRotate] = useState("deg-0");
 
   const mobileNav = () => {
@@ -13,10 +14,6 @@ function MainNavigation() {
       setRotate("deg-0");
     }
   }
-
-  // useEffect(() => {
-  //   window.onresize = setRotate("deg-0");
-  // }, []);
 
   return (
     <Fragment>
@@ -43,7 +40,12 @@ function MainNavigation() {
       </header>
       <header className={classes.desktopHeader}>
         <ul>
-            <li>
+          <HeaderNavLink compString={compString} hLink="/" text="Home" />
+          <HeaderNavLink compString={compString} hLink="/about-me" text="About Me" />
+          <HeaderNavLink compString={compString} hLink="/about-the-site" text="About The Site" />
+          <HeaderNavLink compString={compString} hLink="/projects" text="Projects" />
+          <HeaderNavLink compString={compString} hLink="/resume" text="Resume" />
+            {/* <li>
               <Link href='/'>Home</Link>
             </li>
             <li>
@@ -57,7 +59,7 @@ function MainNavigation() {
             </li>
             <li>
               <Link href='/resume'>Resume</Link>
-            </li>
+            </li> */}
         </ul>
       </header>
     </Fragment>
