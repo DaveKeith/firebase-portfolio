@@ -1,4 +1,15 @@
 .me{
+    p{
+        color: $color-text-light;
+        line-height: 1.5;
+
+        span{
+            color: black;
+            font-size: 2.4rem;
+            font-weight: 300;
+        }
+    }
+
     &--details{
         display: flex;
         align-items: center;
@@ -7,6 +18,7 @@
 
         @include respond(tab-port){
             flex-direction: column;
+            gap: 2rem;
         }
     }
 
@@ -22,16 +34,6 @@
     &--rv-col{
         @include respond(tab-port){
             flex-direction: column-reverse;
-        }
-    }
-    
-    p{
-        color: $color-text-light;
-
-        span{
-            color: black;
-            font-size: 2.4rem;
-            font-weight: 300;
         }
     }
 
@@ -67,10 +69,12 @@
         }
         
         &__pic3{
-            width: 70rem;
+            width: 150rem;
+            margin-right: 2rem;
             filter: drop-shadow(0.5rem 0.5rem 1rem black);
 
             @include respond(tab-port){
+                margin-right: 0;
                 filter: drop-shadow(0 0 1rem $color-text-light);
             }
         }

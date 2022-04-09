@@ -4,7 +4,7 @@ import Headline from "../../components/header/headline";
 
 const Project = () => {
     const [myProject, setMyProject] = useState({});
-    const router = useRouter()
+    const router = useRouter();
     const projectId = router.query.projectId;
 
     useEffect(() => {

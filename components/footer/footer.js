@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import classes from './footer.module.scss';
+import classes from '../../styles/modules/footer.module.scss';
 
 const Footer = () => {
     return (

@@ -1,5 +1,7 @@
+@import '../abstracts/variables';
+
 .item{
-    border: 0.1rem solid midnightblue;
+    border: 0.1rem solid $color-primary;
     padding: 2rem;
     transition: box-shadow 0.5s linear, transform 0.5s linear;
     background-color: rgba(255, 255, 255, 0.6);
@@ -7,7 +9,7 @@
     &:hover{
         cursor: pointer;
         background-color: rgb(245, 255, 255);
-        box-shadow: 0 0 1rem 1rem darkslateblue;
+        box-shadow: 0 0 1rem 1rem $color-primary-hover;
         transform: scale(0.95);
         transition: box-shadow 0.5s linear, transform 0.5s linear, background-color 0.5s linear;
     }

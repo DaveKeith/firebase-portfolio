@@ -1,7 +1,7 @@
 import { Fragment, useState, useEffect } from 'react';
 import Link from 'next/link';
 
-import classes from './main-navigation.module.scss';
+import classes from '../../styles/modules/main-navigation.module.scss';
 
 function MainNavigation() {
   const [rotate, setRotate] = useState("deg-0");

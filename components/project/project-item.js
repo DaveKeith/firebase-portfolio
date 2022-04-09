@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import classes from "./project-item.module.scss";
+import classes from "../../styles/modules/project-item.module.scss";
 
 const ProjectListItem = ({ project }) => {
     let { projectId, projectName, description } = project;

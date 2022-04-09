@@ -1,9 +1,12 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
 .mobileHeader{
     position: absolute;
     margin-left: -10rem;
     transition: margin 1s;
 
-    @media only screen and (max-width: 56.25em) { 
+    @media only screen and (tab-port) { 
         margin-top: 11rem;
         margin-left: 0rem;
     };
@@ -23,7 +26,7 @@
         margin: 2.5rem;
         cursor: pointer;
         font-size: 5rem;
-        color: midnightblue;
+        color: $color-primary;
     }
 
     a{
@@ -36,20 +39,24 @@
         height: 100%;
     }
 
+    li{
+        list-style: none;
+    }
+
     :hover{
-        color: darkslateblue;
+        color: $color-primary-hover;
     }
 }
 
 .desktopHeader{
     margin-top: 0;
-    background-color: midnightblue;
+    background-color: $color-primary;
     font-size: 2rem;
     font-weight: 600;
     padding: 2rem 0px;
     transition: margin-top 1s;
 
-    @media only screen and (max-width: 56.25em) { 
+    @media only screen and (tab-port) { 
         margin-top: -10rem;
     };
 
@@ -69,14 +76,15 @@
         li{
             list-style: none;
             display: block;
-
-            .active-page{
-                border-bottom: 3px solid red;
-            }
+            transition: transform 0.5s;
 
             &:hover{
                 transform: scale(0.85);
                 transition: transform 0.5s;
+
+                .underline{
+                    border-top: 1rem solid white;
+                }
             }
         }
     }

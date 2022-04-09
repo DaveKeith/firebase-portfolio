@@ -20,7 +20,6 @@ const AboutMe = () => {
                     <span>{"Hi, I'm Dave Keith  "}</span> 
                     {"  I go by David as well but I've noticed that David Keith taken as a profile name much more often. I'm a software developer with experience in a wide array of technologies, accustomed to working in a wide array of work environments. On top of that, I'm very ambitious and willing to learn new technologies."}</p>
             </div>
-            <p>{"I've definitely taken a unique path."}</p>
             <div className="me--details me--alt-bg">
                 <p>
                     <span>{"I'm from Charlotte, North Carolina.  "}</span>  
@@ -50,10 +49,9 @@ const AboutMe = () => {
                         {"  I was stationed at Naval Station Mayport from 2010-2014 and served aboard a frigate called the USS Underwood (FFG36) and a cruiser called the USS Gettysburg (CG64)."}
                     </p>
                     <p>{"On the USS Underwood, we deployed to the Carribean and to the Pacific side of South America (via the Panama Canal).  We were able to visit numerous countries such as Panama, Colombia, Chile, Jamaica, Trinidad and Tobago, Curacao, and Honduras."}</p>
-                    <p>{"On the USS Gettysburg, we deployed to the Persian Gulf as part of a carrier group.  We stopped in Marseilles, France en route and while in the Persian Gulf, made several port visits to Bahrain and Dubai."}</p>
+                    <p>{"On the USS Gettysburg, we deployed to the Persian Gulf as part of a carrier group.  We stopped in Marseilles, France en route and while in the Persian Gulf, made several port visits to Bahrain and Dubai.  My enlistment contract ended in the middle of that deployment, and I was flown to a carrier in a helicopter and launched off the aircraft carrier in a cargo plane."}</p>
                 </div>
             </div>
-            <p>{"Even before that, I travelled quite a bit."}</p>
         </section>
     </Fragment>
 }

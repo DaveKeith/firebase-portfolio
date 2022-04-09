@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import classes from "./tableOfContents.module.scss";
+import classes from "../../styles/modules/tableOfContents.module.scss";
 
 const TableOfContents = ({ title, contentsList }) => {
     const { pathname } = useRouter();

@@ -12,13 +12,13 @@ const HomePage = () => {
                 <Link href='/about-me' passHref>
                     <div className="home-grid__item home-grid__item--left">
                         <h2>About Me</h2>
-                        <p>Get to know a little about me on a personal level.</p>
+                        <p>Get to know a little about my background.</p>
                     </div>
                 </Link>
                 <Link href='/about-the-site' passHref>
                     <div className="home-grid__item home-grid__item--right">
                         <h2>About The Site</h2>
-                        <p>What technology goes into making this site.  Find out here!</p>
+                        <p>Shows what technologies go into making this site.</p>
                     </div>
                 </Link>
                 <Link href='/projects' passHref>
@@ -30,7 +30,7 @@ const HomePage = () => {
                 <Link href='/resume' passHref>
                     <div className="home-grid__item home-grid__item--right">
                         <h2>Resume</h2>
-                        <p>Just in case you {"don't"} have my resume on hand, {"here's"} a copy.</p>
+                        <p>Just in case you {"don't"} have my resume on hand.</p>
                     </div>
                 </Link>
             </div>
