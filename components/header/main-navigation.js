@@ -4,7 +4,7 @@ import HeaderNavLink from './header-nav-link';
 
 import classes from '../../styles/modules/main-navigation.module.scss';
 
-function MainNavigation({compString}) {
+function MainNavigation() {
   const [rotate, setRotate] = useState("deg-0");
 
   const mobileNav = () => {
@@ -40,11 +40,11 @@ function MainNavigation({compString}) {
       </header>
       <header className={classes.desktopHeader}>
         <ul>
-          <HeaderNavLink compString={compString} hLink="/" text="Home" />
-          <HeaderNavLink compString={compString} hLink="/about-me" text="About Me" />
-          <HeaderNavLink compString={compString} hLink="/about-the-site" text="About The Site" />
-          <HeaderNavLink compString={compString} hLink="/projects" text="Projects" />
-          <HeaderNavLink compString={compString} hLink="/resume" text="Resume" />
+          <HeaderNavLink hLink="/" text="Home" />
+          <HeaderNavLink hLink="/about-me" text="About Me" />
+          <HeaderNavLink hLink="/about-the-site" text="About The Site" />
+          <HeaderNavLink hLink="/projects" text="Projects" />
+          <HeaderNavLink hLink="/resume" text="Resume" />
             {/* <li>
               <Link href='/'>Home</Link>
             </li>

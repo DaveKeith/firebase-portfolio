@@ -1,12 +1,15 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-function HeaderNavLink({compString, text, hLink}){
+function HeaderNavLink({text, hLink}){
+    const router = useRouter();
+
     if(
-        text === "Home" && compString == "withRouter(HomePage)" ||
-        text === "About Me" && compString == "withRouter(AboutMe)" ||
-        text === "About The Site" && compString == "withRouter(AboutTheSite)" ||
-        text === "Projects" && compString == "withRouter(ProjectList)" ||
-        text === "Resume" && compString == "withRouter(Resume)"
+        text === "Home" && router.pathname == "/" ||
+        text === "About Me" && router.pathname == "/about-me" ||
+        text === "About The Site" && router.pathname == "/about-the-site" ||
+        text === "Projects" && router.pathname == "/projects" ||
+        text === "Resume" && router.pathname == "/resume"
     ){
         return <li key={text} className='active-nav'>
                 <Link href={hLink} passHref>
