@@ -5,21 +5,25 @@ import HeaderNavLink from './header-nav-link';
 import classes from '../../styles/modules/main-navigation.module.scss';
 
 function MainNavigation() {
-  const [rotate, setRotate] = useState("deg-0");
+  const [rotate, setRotate] = useState(classes["open-list"]);
 
   const mobileNav = () => {
-    if(rotate === "deg-0"){
-      setRotate("deg-45");
+    if(rotate === classes["open-list"]){
+      setRotate(classes["exit-list"]);
     }else{
-      setRotate("deg-0");
+      setRotate(classes["open-list"]);
     }
   }
 
   return (
     <Fragment>
       <header className={`${classes.mobileHeader} ${rotate}`}>
-        <div className='icon-bg' />
-        <i className="bi bi-plus-circle-fill" onClick={mobileNav} />
+        <div className='icon-bg' onClick={mobileNav}>
+          <span className={classes.line1} />
+          <span className={classes.line2} />
+          <span className={classes.line3} />
+        </div>
+        {/* <i className="bi bi-plus-circle-fill" onClick={mobileNav} /> */}
         <ul onClick={mobileNav}>
             <li>
               <Link href='/'>Home</Link>

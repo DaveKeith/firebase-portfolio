@@ -1,3 +1,6 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
 .footerClass{
     background-color: midnightblue;
     padding: 1rem 3rem 3rem 3rem;
@@ -17,10 +20,33 @@
             color: white;
             cursor: pointer;
         }
-    
-        :hover{
-            transform: scale(0.85);
-            transition: transform 0.5s linear;
+
+        .my-email, .my-phone-number{
+            position: absolute;
+            right: 3rem;
+            padding: 1rem 2rem;
+            background-color: $color-primary;
+            color: white;
+            border-radius: 3rem;
+            transition: transform 0.5s cubic-bezier(1, 2.5, 0.4, 1.8);
         }
+        // .my-email{
+        //     bottom: -5rem;
+
+        //     @include respond(tab-port){
+        //         bottom: 0;
+        //     }
+        // }
+        // .my-phone-number{
+        //     bottom: -10rem;
+
+        //     @include respond(tab-port){
+        //         bottom: -5rem;
+        //     }
+
+        //     @include respond(phone){
+        //         bottom: 0;
+        //     }
+        // }
     }
 }
