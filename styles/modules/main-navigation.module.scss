@@ -1,5 +1,6 @@
 @import '../abstracts/mixins';
 @import '../abstracts/variables';
+@import '../base/animations';
 
 .mobileHeader{
     position: absolute;
@@ -93,7 +94,7 @@
         top: -100vh;
         left: -100vw;
         border-radius: 100%;
-        transition: all .5s linear;
+        //transition: all .5s linear;
     }
 }
 
@@ -109,19 +110,18 @@
         position: fixed;
         transform: rotate(0);
         transition: transform 0.5s linear;
-        
-        span{
-            transition: transform 0.5s linear;
-        }
     }
     .line1{
         transform: translateX(0.9rem) rotate(-45deg);
+        transition: translate 0.5s linear;
     }
     .line2{
-        transform: rotate(-45deg);
+        transform: rotate(45deg);
+        transition: transform 0.5s linear;
     }
     .line3{
-        transform: translateX(-0.9rem) rotate(-135deg);
+        transform: translateX(-0.9rem) rotate(225deg);
+        transition: translate 0.5s linear;
     }
 }
 

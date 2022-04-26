@@ -1,5 +1,5 @@
 {
-  "name": "firebase-portfolio",
+  "name": "vercel-portfolio",
   "private": true,
   "scripts": {
     "dev": "next dev",
