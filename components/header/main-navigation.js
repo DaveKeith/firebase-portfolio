@@ -23,7 +23,6 @@ function MainNavigation() {
           <span className={classes.line2} />
           <span className={classes.line3} />
         </div>
-        {/* <i className="bi bi-plus-circle-fill" onClick={mobileNav} /> */}
         <ul onClick={mobileNav}>
             <li>
               <Link href='/'>Home</Link>

@@ -6,6 +6,7 @@ function Layout({children}) {
   return (
     <Fragment>
       <MainNavigation />
+      <div className='bg-face' />
       <main>{children}</main>
       <Footer />
     </Fragment>
