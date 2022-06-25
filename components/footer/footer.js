@@ -48,13 +48,13 @@ const Footer = () => {
                 </li>
                 <li>
                     <i className="bi bi-envelope" onClick={revealEmail} />
-                    <span className={classes["my-email"]} style={{transform: `scale(${showEmail})`}}>
+                    <span className={classes["my-email"]} style={{transform: `scale(${showEmail})`, bottom: "20rem" }}>
                         d.keith78@yahoo.com
                     </span>
                 </li>
                 <li>
                     <i className='bi bi-phone' onClick={revealPhoneNum} />
-                    <span className={classes["my-phone-number"]} style={{transform: `scale(${showPhoneNum})`}}>
+                    <span className={classes["my-phone-number"]} style={{transform: `scale(${showPhoneNum})`, bottom: "15rem"}}>
                         704-737-1621
                     </span>
                 </li>
