@@ -1,4 +1,6 @@
 .job{
+    overflow: hidden;
+    
     &:first-child{
         border-top: 2px solid $color-primary;
         border-radius: 3rem 3rem 0 0;
@@ -26,6 +28,7 @@
         float: right;
     }
     li{
+        overflow: hidden;
         list-style: url(../../public/svgs/intersect.svg); //changed the size and color
     }
 }

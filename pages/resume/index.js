@@ -67,6 +67,10 @@ const Resume = () => {
                 <h3>Charter Communications</h3>
                 <span>Mar 2022-Present</span>
                 <h4>Software Developer</h4>
+                <ul>
+                    <li>Created a NextJS application and set up the cooresponding infrastructure from scratch, determining the proper technologies to use while considering the requirements and resources.</li>
+                    <li></li>
+                </ul>
             </div>            
             <div className="job" id="diversey-freelance">
                 <h3>Diversey (Freelance)</h3>
