@@ -1,0 +1,40 @@
+.carousel-item.active{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        height: 5rem;
+    }
+    .carousel-img-link{
+        height: 5rem;
+        width: 60rem;
+    }
+}
+
+.carousel-indicators{
+    display: none;
+}
+.carousel-control-prev, .carousel-control-next{
+    color: $color-primary;
+    background-color: $color-primary;
+    opacity: 1 !important;
+    width: 5rem;
+    height: 5rem;
+    top: calc(50% - 2.5rem);
+    border-radius: 50%;
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1.3);
+
+    &:hover{
+        background-color: $color-primary-hover;
+    }
+
+    &:active{
+        transform: scale(1.5);
+    }
+
+    .sr-only{
+        display: none;
+    }
+}

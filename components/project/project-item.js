@@ -15,7 +15,7 @@ const ProjectListItem = ({ project }) => {
         <div className={classes.item}>
             <Link 
                 href={"/projects/[projectId]"} 
-                as={`/projects/${projectId}`} 
+                as={`/projects/${projectId - 1}`} //a bit confusing but the firebase index is projectId - 1
                 passHref
             >
                 <div>

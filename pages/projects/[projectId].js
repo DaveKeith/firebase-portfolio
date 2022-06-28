@@ -1,39 +1,104 @@
-import { useRouter } from "next/router";
-import { Fragment, useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { withRouter } from "next/router";
+import { Fragment, useState } from "react";
 import Headline from "../../components/header/headline";
 
-const Project = () => {
-    const [myProject, setMyProject] = useState({});
-    const router = useRouter();
-    const projectId = router.query.projectId;
+const Project = ({ myProject }) => {
+    const [count, setCount] = useState(0);
 
-    useEffect(() => {
-        //const projectId = window.location.href.split('/').pop();
-        const jsonFileNum = parseInt(projectId) - 1;
-        fetch(
-            `https://davekeith-portfolio-86436-default-rtdb.firebaseio.com/projects/${jsonFileNum}.json`, 
-            { method: "get", mode: "cors" }
-        )
-        .then(res => res.json())
-        .then(res => { setMyProject(res) })
-        .catch(err => console.log(err));
-    }, []);
+    const decreaseCount = () => {
+        setCount(count !== 0 ? count - 1 : myProject.views.length - 1);
+    }
 
-    const { projectName, views } = myProject;
-    const workplace = null;
+    const increaseCount = () => {
+        setCount(count !== myProject.views.length - 1 ? count + 1 : 0);
+    }
 
-    if(myProject.workplace){
-        workplace = <h2>A Project I worked on while at {myProject.workplace}</h2>;
+    const carouselIndicators = () => {
+        let carouselItems = null;
+        for(let a = 0; a < myProject.views.length; a++){
+            carouselItems += <li 
+                data-target="#carouselExampleIndicators" 
+                data-slide-to={a} 
+                className={`${a === count ? "active" : ""}`} 
+            />;
+        }
+        return carouselItems;
+    }
+
+    const carouselInner = () => {
+        let carouselItems = [];
+        for(let a = 0; a < myProject.views.length; a++){
+            console.log(myProject.views[a].name);
+            carouselItems[a] = <div className={`carousel-item${a === count ? " active" : ""}`}>
+                {myProject.views[a].url
+                        ?
+                        <Link href={myProject.views[a].url} passHref>
+                            <a><h2>{myProject.views[a].name}</h2></a>    
+                        </Link>
+                        :
+                        <h2>{myProject.views[a].name}</h2>
+                    }
+                <Image src={myProject.views[a].img} alt={`slide ${a+1}`} width={500} height={300} />
+                <div className="carousel-img-link">
+                     
+                </div>
+            </div>;
+        }
+        return carouselItems
     }
 
     return <Fragment>
-        <Headline text={projectName} />
+        <Headline text={myProject.projectName} />
         <section className="content">
-            {workplace}
+            {myProject.workplace !== null && myProject.workplace !== undefined
+                ?
+                <h2>A Project I worked on while at {myProject.workplace}</h2>
+                :
+                null
+            }
             <p>{myProject.description}</p>
-            {/* carousell */}
+            <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+            <ol className="carousel-indicators">
+                {carouselIndicators()}
+            </ol>
+            <div className="carousel-inner">
+                {carouselInner()}
+            </div>
+            <a className="carousel-control-prev" role="button" data-slide="prev" onClick={decreaseCount}>
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="sr-only">Previous</span>
+            </a>
+            <a className="carousel-control-next" role="button" data-slide="next" onClick={decreaseCount}>
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="sr-only">Next</span>
+            </a>
+            </div>
         </section>
     </Fragment>
 }
 
-export default Project;
+export async function getStaticProps(context){
+    const res = await fetch(`https://davekeith-portfolio-86436-default-rtdb.firebaseio.com/projects/${context.params.projectId}.json`);
+    const myProject = await res.json();
+
+    return {
+        props: {
+            myProject
+        }
+    }
+}
+
+export async function getStaticPaths(){
+    const res = await fetch(`https://davekeith-portfolio-86436-default-rtdb.firebaseio.com/projects.json`);
+    const myProjects = await res.json();
+    const paths = myProjects.map((item, index) => { return { params: { projectId: index.toString() }}})
+
+    return {
+        paths,
+        fallback: true
+    }
+}
+
+export default withRouter(Project);
