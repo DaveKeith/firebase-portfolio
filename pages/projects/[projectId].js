@@ -34,10 +34,10 @@ const Project = ({ myProject }) => {
                 {myProject.views[a].url
                         ?
                         <Link href={myProject.views[a].url} passHref>
-                            <a><h2>{myProject.views[a].projectName}</h2></a>    
+                            <a><h2>{myProject.views[a].name}</h2></a>    
                         </Link>
                         :
-                        <h2>{myProject.views[a].projectName}</h2>
+                        <h2>{myProject.views[a].name}</h2>
                     }
                 <Image src={myProject.views[a].img} alt={`slide ${a+1}`} width={500} height={300} />
                 <div className="carousel-img-link">
