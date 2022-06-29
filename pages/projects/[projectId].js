@@ -18,7 +18,8 @@ const Project = ({ myProject }) => {
     const carouselIndicators = () => {
         let carouselItems = null;
         for(let a = 0; a < myProject.views.length; a++){
-            carouselItems += <li 
+            carouselItems += <li
+                key={a} 
                 data-target="#carouselExampleIndicators" 
                 data-slide-to={a} 
                 className={`${a === count ? "active" : ""}`} 
@@ -30,7 +31,7 @@ const Project = ({ myProject }) => {
     const carouselInner = () => {
         let carouselItems = [];
         for(let a = 0; a < myProject.views.length; a++){
-            carouselItems[a] = <div className={`carousel-item${a === count ? " active" : ""}`}>
+            carouselItems[a] = <div key={a} className={`carousel-item${a === count ? " active" : ""}`}>
                 {myProject.views[a].url
                         ?
                         <Link href={myProject.views[a].url} passHref>
@@ -69,7 +70,7 @@ const Project = ({ myProject }) => {
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="sr-only">Previous</span>
             </a>
-            <a className="carousel-control-next" role="button" data-slide="next" onClick={decreaseCount}>
+            <a className="carousel-control-next" role="button" data-slide="next" onClick={increaseCount}>
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="sr-only">Next</span>
             </a>

@@ -8,10 +8,7 @@ const ProjectList = () => {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
-        fetch(
-            'https://davekeith-portfolio-86436-default-rtdb.firebaseio.com/projects.json', 
-            { method: "get", mode: "cors" }
-        )
+        fetch('https://davekeith-portfolio-86436-default-rtdb.firebaseio.com/projects.json')
         .then(res => res.json())
         .then(res => { setProjects(res) })
         .catch(err => console.log(err));
@@ -24,7 +21,7 @@ const ProjectList = () => {
             <p className="fs-3 mb-5">{"Here's a list of several examples my projects:"}</p>
             <div className="projects-grid">
                 {projects.map((project, index) => (
-                    <ProjectListItem key={index} project={project} />
+                    <ProjectListItem key={index} id={index} project={project} />
                 ))}
             </div>
         </section>

@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import classes from "../../styles/modules/project-item.module.scss";
 
-const ProjectListItem = ({ project }) => {
-    let { projectId, projectName, description } = project;
+const ProjectListItem = ({ id, project }) => {
+    let { projectName, description } = project;
     const img = project.views[0];
     
     if(project.workplace){
@@ -15,7 +15,7 @@ const ProjectListItem = ({ project }) => {
         <div className={classes.item}>
             <Link 
                 href={"/projects/[projectId]"} 
-                as={`/projects/${projectId - 1}`} //a bit confusing but the firebase index is projectId - 1
+                as={`/projects/${id}`}
                 passHref
             >
                 <div>
