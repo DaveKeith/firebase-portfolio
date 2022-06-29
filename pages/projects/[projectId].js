@@ -30,15 +30,14 @@ const Project = ({ myProject }) => {
     const carouselInner = () => {
         let carouselItems = [];
         for(let a = 0; a < myProject.views.length; a++){
-            console.log(myProject.views[a].name);
             carouselItems[a] = <div className={`carousel-item${a === count ? " active" : ""}`}>
                 {myProject.views[a].url
                         ?
                         <Link href={myProject.views[a].url} passHref>
-                            <a><h2>{myProject.views[a].name}</h2></a>    
+                            <a><h2>{myProject.views[a].projectName}</h2></a>    
                         </Link>
                         :
-                        <h2>{myProject.views[a].name}</h2>
+                        <h2>{myProject.views[a].projectName}</h2>
                     }
                 <Image src={myProject.views[a].img} alt={`slide ${a+1}`} width={500} height={300} />
                 <div className="carousel-img-link">
