@@ -1,3 +1,8 @@
+.carousel{
+    background-color: $color-alt-item;
+    border-radius: 10px;
+}
+
 .carousel-item.active{
     margin-top: 5rem;
     display: flex;

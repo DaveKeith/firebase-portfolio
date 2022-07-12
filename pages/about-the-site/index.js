@@ -49,12 +49,13 @@ const AboutTheSite = () => {
                 <ul>
                     <li>
                         <h4>Vercel</h4>
-                        <p>For the client side of this application, {"I'm"} hosting with <a href="https://vercel.com" target="_blank" rel="noreferrer">Vercel</a>.  Why Vercel?  Well, I previously worked with GitHub pages, but once I learned ReactJS, I wanted to show off those skills in a portfolio.  Unfortunately GitHub pages {"wouldn't"} work with ReactJS so I turned to Heroku to create my  (<a href="http://davekeith.herokuapp.com" target="_blank" rel="noreferrer">portfolio</a>) as it was a free resource and allowed me to show off my ReactJS skillset.</p>
+                        <p>For the client side of this application, {"I'm"} hosting with <a href="https://vercel.com" target="_blank" rel="noreferrer">Vercel</a>.  Why Vercel?  Well, I previously worked with GitHub pages, but once I learned ReactJS, I wanted to show off those skills in a portfolio.  Unfortunately GitHub pages {"wouldn't"} work with ReactJS so I turned to Heroku to create my <a href="http://davekeith.herokuapp.com" target="_blank" rel="noreferrer">portfolio</a> as it was a free resource and allowed me to show off my ReactJS skillset.</p>
                         <p>However, there were shortcomings with Heroku:</p>
                         <ul>
                             <li>The page took around 30 seconds to load.</li>
                             <li>It works independently from GitHub.  It would be nice if you could link the repositories somehow.</li>
                         </ul>
+                        <p />
                         <p>Turns out that Vercel, the organization that brought us NextJS also hosts for free (up to a certain point), and solves the issues that plagued me with Heroku.</p>
                     </li>
                     <li>
