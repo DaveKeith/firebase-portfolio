@@ -22,6 +22,7 @@
         }
         h3, div{
             grid-column: 2;
+            width: calc(100% - 1rem);
         }
         h3{
             align-self: end;
