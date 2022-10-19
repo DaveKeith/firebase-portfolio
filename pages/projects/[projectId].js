@@ -1,19 +1,52 @@
 import Link from "next/link";
 import Image from "next/image";
 import { withRouter } from "next/router";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import Headline from "../../components/header/headline";
 
 const Project = ({ myProject }) => {
     const [count, setCount] = useState(0);
+    const leftArrowRef = useRef();
+    const rightArrowRef = useRef();
+
+    useEffect(() => {
+        const keydownArrowHandler = (e) => {
+            if(e.keyCode === 37){
+                leftArrowRef.current.style.transform = "scale(1.5)";
+            }
+            if(e.keyCode === 39){
+                rightArrowRef.current.style.transform = "scale(1.5)";
+            }
+        }
+
+        const keyupArrowHandler = (e) => {
+            if(e.keyCode === 37){
+                leftArrowRef.current.style.transform = "";
+                setCount(count !== 0 ? count - 1 : myProject.views.length - 1);
+            }
+            if(e.keyCode === 39){
+                rightArrowRef.current.style.transform = "";
+                setCount(count !== myProject.views.length - 1 ? count + 1 : 0);
+            }
+        }
+
+        //left keycode = 37, right = 39
+        window.addEventListener("keydown", keydownArrowHandler);
+        window.addEventListener("keyup", keyupArrowHandler);
+
+        return () => {
+            window.removeEventListener("keydown", keydownArrowHandler);
+            window.removeEventListener("keyup", keyupArrowHandler);
+        }
+    }, [count, myProject.views.length]);
 
     const decreaseCount = () => {
-        setCount(count !== 0 ? count - 1 : myProject.views.length - 1);
-    }
+        setCount(count !== 0 ? count - 1 : finalIndex);
+    };
 
     const increaseCount = () => {
-        setCount(count !== myProject.views.length - 1 ? count + 1 : 0);
-    }
+        setCount(count !== finalIndex ? count + 1 : 0);
+    };
 
     const carouselIndicators = () => {
         let carouselItems = null;
@@ -66,11 +99,11 @@ const Project = ({ myProject }) => {
             <div className="carousel-inner">
                 {carouselInner()}
             </div>
-            <a className="carousel-control-prev" role="button" data-slide="prev" onClick={decreaseCount}>
+            <a className="carousel-control-prev" role="button" data-slide="prev" ref={leftArrowRef} onClick={decreaseCount}>
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="sr-only">Previous</span>
             </a>
-            <a className="carousel-control-next" role="button" data-slide="next" onClick={increaseCount}>
+            <a className="carousel-control-next" role="button" data-slide="next" ref={rightArrowRef} onClick={increaseCount}>
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="sr-only">Next</span>
             </a>
