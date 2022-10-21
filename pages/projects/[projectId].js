@@ -41,11 +41,11 @@ const Project = ({ myProject }) => {
     }, [count, myProject.views.length]);
 
     const decreaseCount = () => {
-        setCount(count !== 0 ? count - 1 : finalIndex);
+        setCount(count !== 0 ? count - 1 : myProject.views.length - 1);
     };
 
     const increaseCount = () => {
-        setCount(count !== finalIndex ? count + 1 : 0);
+        setCount(count !== myProject.views.length - 1 ? count + 1 : 0);
     };
 
     const carouselIndicators = () => {
