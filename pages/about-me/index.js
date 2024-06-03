@@ -16,9 +16,12 @@ const AboutMe = () => {
                         height={200} 
                     />
                 </div>
-                <p>
-                    <span>{"Hi, I'm Dave Keith  "}</span> 
-                    {"  I go by David as well but I've noticed that David Keith taken as a profile name much more often. I'm a software developer with experience in a wide array of technologies, accustomed to working in a wide array of work environments. On top of that, I'm very ambitious and willing to learn new technologies."}</p>
+                <div>
+                    <p>
+                        <span>{"Hi, I'm Dave Keith  "}</span> 
+                        {"  (with my dog Loopy, an American Eskimo Dog mix and a good boy). I go by David as well but I've noticed that David Keith taken as a profile name much more often. I'm a software developer with experience in a wide array of technologies, accustomed to working in a wide array of work environments. On top of that, I'm very ambitious and willing to learn new technologies."}
+                    </p>
+                </div>
             </div>
             <div className="me--details me--alt-bg">
                 <p>

@@ -68,8 +68,10 @@ const Resume = () => {
                 <span>Mar 2022-Present</span>
                 <h4>Software Developer</h4>
                 <ul>
-                    <li>Created a NextJS application and set up the cooresponding infrastructure from scratch, determining the proper technologies to use while considering the requirements and resources.</li>
-                    <li></li>
+                    <li>Created a ReactJS application used for assembling reporting data into tables, calendars, filtering tools, and forms as a resource for Call Center Technology and Billing Operations.</li>
+                    <li>Set up the corresponding infrastructure from scratch, determining the proper technologies to use while considering the requirements and resources.</li>
+                    <li>Worked with DevOps tools such as Jira, GitLab, and Portainer.</li>
+                    <li>Designed the UI using advanced styling concepts such as pre-processors, responsive design, and utility classes.</li>
                 </ul>
             </div>            
             <div className="job" id="diversey-freelance">

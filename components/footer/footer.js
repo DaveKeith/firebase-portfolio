@@ -55,7 +55,7 @@ const Footer = () => {
                 <li>
                     <i className='bi bi-phone' onClick={revealPhoneNum} />
                     <span className={classes["my-phone-number"]} style={{transform: `scale(${showPhoneNum})`, bottom: "15rem"}}>
-                        704-737-1621
+                        803-415-4207
                     </span>
                 </li>
             </ul>
